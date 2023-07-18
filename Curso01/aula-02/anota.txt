@@ -1,0 +1,56 @@
+Quando montamos uma regra com seletor de TAG
+todas aquelas tags do seu código serão formatadas
+EVITE USAR SELETOR DE TAG
+header {
+    background-color: #f60;
+}
+
+Seletor de Class
+Definir uma regra CSS - atribuir um nome a ela e utilizar
+em QUALQUER elemento HTML
+CSS =
+            .nomeClass {
+                propriedade: valor;
+            }
+HTML =
+<tag class="nomeClass">.....</tag>
+USAR SEM MEDO
+
+largura de container
+você pode definir a lagura de qq container com
+ a propriedade width seguida de algum valor = width: 400px;
+ Caso não seja definido por padrão o container ocupa todo o
+ espaço da largura da janela(100% == PADRÃO)
+
+ altura do container
+ se vc não definir uma altura para o container, o navegador
+ usará a quantidade de conteúdo existente, isso porque o
+ padrão de altura é height: auto;
+
+
+   margin: 20px 40px 60px 80px;
+    /* margin-left: 50px; */
+    border: 10px solid #090;
+    /* border-top: 10px solid #090; */
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: #090; */
+    padding:20px;
+    box-sizing: border-box;
+
+
+reset CSS 
+zerar margin + padding  de todos os elementos
+atribuição box-sizing
+Logo depois dos imports fazer o reset
+Para atribuir a todos os elementos usar o seletor (*)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+Flexbox - alinhamento de conteúdos dentro de um container(pai)
+TRANSFORMAR O CONTAINER PAI EM UM FLEX-CONTAINER == display: flex;
+PADRÃO == todos os filhos desse container flexível(flex-items) ficarão um ao lado do outro (flex-direction: row)

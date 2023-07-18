@@ -1,0 +1,7 @@
+
+.bg-red1 { background-color: #dc143c; color: #FFF;}
+
+textarea {
+    resize: none;
+    height: 150px;
+}

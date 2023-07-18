@@ -1,0 +1,193 @@
+/* Linkar com o Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-primary: rgb(3, 3, 29);
+    --bg-secondary: #dc143c;
+    --mb: 50px;
+    --mt: 50px;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol {
+    /* marcador ou numerador das listas */
+    list-style: none;
+}
+
+a {
+    /* tirando sublinhado do link */
+    text-decoration: none;
+
+    /* todas as letras maiúsculas */
+    text-transform: uppercase;
+
+    /* cor do texto */
+    color: var(--text-color);
+
+    /* peso da fonte */
+    font-weight: 600;
+}
+
+
+/* formatação header-page */
+.header-page {
+    width: 100%;
+    min-height: 80px;
+    /* background-color: #000; */
+    color: var(--text-color);
+    display: flex;
+
+    /* alinhamento vertical */
+    align-items: center;
+
+    /* alinhamentro horizontal */
+    justify-content: space-around;
+
+    /* quebra do conteúdo - Não coube ele tenta arrumar  ELE NÃO QUEBRA CONTEÚDO POR PADRÃO*/
+    flex-wrap: wrap;
+
+    /* espaçamento para não deixar grudado nas margens */
+    padding: 20px 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-page-menu ul {
+    display: flex;
+}
+
+.header-page-menu li {
+    margin: 0 10px;
+}
+
+.header-page-menu a {
+    font-size: 15px;
+    transition: .5s;
+}
+
+.header-page-menu a:hover {
+    color: var(--bg-secondary);
+}
+
+/* fim  formatação header-page */
+
+
+/*********** hero ***************/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.hero-title {
+    margin-top: var(--mt);
+    margin-bottom: var(--mb) ;
+    font-size: 8vmin;
+    text-align: center;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.hero-subtitle, .tour-title {
+    margin-bottom: var(--mb);
+    font-size: 5vmin;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn {
+    border: 1px solid var(--bg-secondary);
+    background-color: var(--bg-secondary);
+    padding: 7px 30px;
+    border-radius: 70px;
+    font-size: 3vmin;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--bg-secondary);
+}
+/********* fim hero ***********/
+
+
+
+/********* tour ***********/
+.tour {
+    width: 90%;
+    height: 200vh;
+    /* background-color: #ccc; */
+    margin: 80px auto;
+}
+
+.tour-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tour-list-item {
+    width: 45%;
+    margin: 30px 0;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
+    border-radius: 7px;
+}
+
+.tour-list-item img { 
+    width: 80%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.tour-list-item img:hover { 
+    transform: scale(1.2);
+}
+
+.tour-list-item h3 {
+    margin: 30px 0 20px;
+    font-size: 3vmin;
+}
+
+.tour-list-item p {
+    margin: 20px 0 30px;
+    font-size: 2.5vmin;
+}
+/********* fim tour ***********/
+
+/* inicial responsivo */
+@media( max-width: 750px) {
+    .tour-list-item {
+        width: 100%;
+    }
+}

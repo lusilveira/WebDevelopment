@@ -1,0 +1,85 @@
+/* Linkar com o Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol {
+    /* marcador ou numerador das listas */
+    list-style: none;
+}
+
+a {
+    /* tirando sublinhado do link */
+    text-decoration: none;
+    
+    /* todas as letras maiúsculas */
+    text-transform: uppercase;
+    
+    /* cor do texto */
+    color: #fff;
+
+    /* peso da fonte */
+    font-weight: 600;
+}
+
+
+/* formatação header-page */
+.header-page {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    /* alinhamento vertical */
+    align-items: center;
+
+    /* alinhamentro horizontal */
+    justify-content: space-between;
+
+    /* espaçamento para não deixar grudado nas margens */
+    padding: 0 20px;
+     
+}
+
+.header-page-menu ul {
+    display: flex;
+}
+
+.header-page-menu li {
+    margin: 0 10px;
+}
+
+.header-page-menu a {
+    font-size: 15px;
+    transition: .5s;
+}
+
+.header-page-menu a:hover {
+    color: #dc143c;
+}
+/* fim  formatação header-page */
+
+
+/*********** hero ***************/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+
+/********* fim hero ***********/
